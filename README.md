@@ -1,5 +1,5 @@
 ---
-title: Tic Tac Toe
+title: project-tds
 emoji: 🦀
 colorFrom: gray
 colorTo: yellow
