@@ -1112,8 +1112,8 @@ async def generate_files_and_deploy(task_data: TaskRequest):
         deployment_info = await commit_and_publish(repo, task_id, round_index, repo_name)
 
         # Delay notification by 15 seconds
-        logger.info("[NOTIFY] Waiting 15 seconds before notifying evaluation server...")
-        await asyncio.sleep(15)
+        logger.info("[NOTIFY] Waiting 30 seconds before notifying evaluation server...")
+        await asyncio.sleep(30)
         # Notify evaluation server
         await notify_evaluation_server(
             evaluation_url=evaluation_url,
